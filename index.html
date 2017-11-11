@@ -9,11 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- Light Box -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
@@ -36,18 +38,21 @@
                         <a class="nav-link" href="#information">Information</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="#photos">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#directions">Directions</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-md-auto" style="margin-left: 10px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/AmazingArtWorld.Bandung/"><span class="fa fa-facebook-square"></span> Facebook</a>
+                        <a class="nav-link" href="https://www.facebook.com/AmazingArtWorld.Bandung/" target="_blank"><span class="fa fa-facebook-square"></span> Facebook</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.instagram.com/amazingartworld.bandung/?hl=en"><span class="fa fa-instagram"></span> Instagram</a>
+                        <a class="nav-link" href="https://www.instagram.com/amazingartworld.bandung/?hl=en" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/channel/UCZuXd1jl1R3WxEWEjVaYL-w"><span class="fa fa-youtube-play"></span> Youtube</a>
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCZuXd1jl1R3WxEWEjVaYL-w" target="_blank"><span class="fa fa-youtube-play"></span> Youtube</a>
                     </li>
                 </ul>
             </div>
@@ -177,31 +182,106 @@
         </div>
     </div>
 
-    <hr id="gallery">
+    <hr id="photos">
+    <div class="content">
+        <div class="container">
+            <div class="row" id="gallery">
+                <h1 class="content-title">GALLERY</h1>
+                <ul>
+                    <li>
+                        <a href="img/gallery0.jpeg" data-lightbox="image-1" title="Gallery 1">
+                            <img src="img/gallery0.jpeg" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/gallery1.png" title="Gallery 2">
+                            <img src="img/gallery1.png" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/gallery2.png" title="Gallery 3">
+                            <img src="img/gallery2.png" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/gallery3.jpg" title="Gallery 4">
+                            <img src="img/gallery3.jpg" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/gallery4.jpg" title="Gallery 5">
+                            <img src="img/gallery4.jpg" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/content2.jpg" title="Gallery 6">
+                            <img src="img/content2.jpg" alt="Amazing Art World 2">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr id="directions">
     <div class="content">
         <div class="container">
             <div class="row">
-                <h1 class="content-title">GALLERY</h1>
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md text-center">
-                        <img src="img/gallery0.jpeg" alt="Amazing Art World 2" width="100%" height="80%">
-                    </div>
-                    <div class="col-md text-center">
-                        <img src="img/gallery1.png" alt="Amazing Art World 2" width="100%" height="80%">
-                    </div>
-                    <div class="col-md text-center">
-                        <img src="img/gallery2.png" alt="Amazing Art World 2" width="100%" height="80%">
+                <h1 class="content-title">DIRECTIONS</h1>
+            </div>
+            <div class="row">
+                <iframe width="100%" height="350" frameborder="0" style="margin: 0 0 20px 0; border: 0;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJxuuu7fmaC4RJ3PO4pMZDwU&key=AIzaSyBfPv8-tdpRych3zzfw_WA2LRKz6AN4GPQ" allowfullscreen></iframe>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="img/bandara.jpg" alt="Bandara Husein Sastranegara" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Bandara Husein Sastranegara</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Keluar dari Jl. Padjadjaran menuju mall Istana Plaza</li>
+                                    <li>Belok di mall Istana Plaza masuk ke Jl. Pasir Kaliki ke arah Jl. Setiabudi</li>
+                                    <li>Ikuti Jalan Sukajadi lurus terus sampai melewati Setiabudi dan Ledeng</li>
+                                    <li>Lokasi Amazing Art World 800m dari Terminal Ledeng</li>
+                                </ul>
+                            </p>
+                            <a href="https://www.google.co.id/maps/dir/Pujasera+Bandara+Husein+Sastranegara,+Husen+Sastranegara,+Bandung+City,+West+Java/Amazing+Art+World,+Jalan+Setiabudhi+No.+293,+Isola,+Sukasari,+Isola,+Sukasari,+Kota+Bandung,+Jawa+Barat+40154/@-6.8835129,107.5582007,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2e68e674731c95ad:0xc7be0d13da25270!2m2!1d107.5795667!2d-6.9050201!1m5!1m1!1s0x2e68e6b7bbae1b27:0x50f1993e2ce7327!2m2!1d107.5956073!2d-6.851784?hl=en" target="_blank" class="btn btn-primary"><span class="fa fa-car"></span> Get Direction</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md text-center">
-                        <img src="img/gallery3.jpg" alt="Amazing Art World 2" width="100%" height="80%">
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="img/stasiun-bandung.jpg" alt="Stasiun Kereta Api Bandung" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Stasiun Kereta Api Bandung</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Dari Jl. Kebon Kawung belok kanan ke arah Jl. Pasir Kaliki – Jl. Sukajadi</li>
+                                    <li>Lurus terus dari Jalan Pasir Kaliki ke arah jalan Sukajadi</li>
+                                    <li>Ikuti Jalan Sukajadi lurus terus sampai melewati Setiabudi dan Ledeng</li>
+                                    <li>Lokasi Amazing Art World 800m dari Terminal Ledeng</li>
+                                </ul>
+                            </p>
+                            <a href="https://www.google.co.id/maps/dir/Bandung+Station,+Jl.+Stasiun+Barat,+Kebon+Jeruk,+Andir,+Bandung+City,+West+Java+40181/Amazing+Art+World,+Jalan+Setiabudhi+No.+293,+Isola,+Sukasari,+Isola,+Sukasari,+Kota+Bandung,+Jawa+Barat+40154/@-6.8835129,107.5645283,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2e68e63c69908701:0x34c1c07f21617455!2m2!1d107.6024379!2d-6.9146325!1m5!1m1!1s0x2e68e6b7bbae1b27:0x50f1993e2ce7327!2m2!1d107.5956073!2d-6.851784?hl=en" target="_blank" class="btn btn-primary"><span class="fa fa-car"></span> Get Direction</a>
+                        </div>
                     </div>
-                    <div class="col-md text-center">
-                        <img src="img/gallery4.jpg" alt="Amazing Art World 2" width="100%" height="80%">
-                    </div>
-                    <div class="col-md text-center">
-                        <img src="img/content2.jpg" alt="Amazing Art World 2" width="100%" height="80%">
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="img/gedung-sate.jpg" alt="Gedung Sate Bandung" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Gedung Sate</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Dari Gedung sate masuk ke arah Jalan Layang Pasupati menuju Cihampelas</li>
+                                    <li>Turun Ke Jl. Cihampelas, lalu belok di Jl. Cipaganti menuju Jl. Setiabudi</li>
+                                    <li>Lurus terus di Jl Cipaganti – Setiabudi sampai ke Terminal Ledeng</li>
+                                    <li>Lokasi Amazing Art World 800m dari Terminal Ledeng</li>
+                                </ul>    
+                            </p>
+                            <a href="https://www.google.co.id/maps/dir/Gedung+Sate,+Citarum,+Bandung+City,+West+Java/Amazing+Art+World,+Jalan+Setiabudhi+No.+293,+Isola,+Sukasari,+Isola,+Sukasari,+Kota+Bandung,+Jawa+Barat+40154/@-6.8771001,107.5811995,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2e68e64c5e8866e5:0x37be7ac9d575f7ed!2m2!1d107.618782!2d-6.9025157!1m5!1m1!1s0x2e68e6b7bbae1b27:0x50f1993e2ce7327!2m2!1d107.5956073!2d-6.851784?hl=en" target="_blank" class="btn btn-primary"><span class="fa fa-car"></span> Get Direction</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,9 +310,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.lightbox-0.5.min.js"></script>
     <script>
         var $item = $('.carousel .carousel-item');
         var $wHeight = $(window).height();
@@ -258,6 +340,12 @@
         $('.carousel').carousel({
             interval: 6000,
             pause: "false"
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#gallery a').lightBox();
         });
     </script>
 </body>
