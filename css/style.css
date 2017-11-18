@@ -1,16 +1,117 @@
-.full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Fjalla One', sans-serif;
+}
+.navbar {
+    height: 100px;
+    padding: 0 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding-top: 28px;
+    font-weight: bold;
+}
+.shrink-navbar {
+    height: 60px;
+    background-color: #FFFFFF;
+}
+.shrink-navbar .active {
+    height: 60px;
+    background-color: #F3B562;
+}
+.dropdown-menu {
+    padding: 0;
+    font-size: 10pt;
+}
+.dropdown-item:hover {
+    color: #FFFFFF;
+    background-color: #F06060;
+}
+.dropdown-divider {
+    border: 1px solid rgba(0,0,0,.15);
+    margin: 0;
+}
+.fa-facebook-square {
+    color: #4267b2;
+}
+#instagram-logo {
+    padding-bottom: 3px;
+}
+.fa-youtube-play {
+    color: #ff0000;
+}
+.parallax {
+    background-image: url('../img/home.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-overlay {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #F2EBBF;
+    opacity: .7;
+}
+.home-text {
+    position: absolute;
+    top: 250px;
+    width: 98.66666666666666%;
+    color: #000000;
+}
+.text-opening {
+    font-weight: lighter;
 }
 .main-text {
-    position: absolute;
-    top: 150px;
-    width: 98.66666666666666%;
-    color: #FFF;
+    font-size: 50pt;
+    font-weight: bolder;
 }
-.p-main {
-    padding: 0 100px;
+.button-nav {
+    margin: 80px 0 0 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #F06060;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #ffffff;
+    background-color: #F06060;
+}
+.btn-clear span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn-clear span:after {
+    color: #000000;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-clear:hover span {
+    padding-right: 20px;
+}  
+.btn-clear:hover span:after {
+    color: #ffffff;
+    opacity: 1;
+    right: 0;
 }
 ul.sponsored {
     padding: 0;
@@ -21,64 +122,82 @@ ul.sponsored {
     padding: 10px;
     margin-top: 80px;
 }
-.content {
-    padding: 50px 0;
+section {
+    min-height: 100vh;
 }
-.button-nav {
-    margin: 80px 0 0 0;
+.page-section {
+    background-color: #F3B562;
 }
-.btn-min-block
-{
-    min-width: 170px;
-    line-height: 26px;
+.section-container {
+    padding: 100px 15px 0;
 }
-.btn-clear
-{
-    color: #fff;
-    background-color: transparent;
-    border-color: #FFF;
-    margin-right: 15px;
+.main-title {
+    text-align: center;
+    width: 100%;
 }
-.btn-clear:hover
-{
-    color: #000;
-    background-color: #FFF;
+.sub-title {
+    padding: 10px 0;
+    margin: 0;
+    color: #F3B562;
+    background-color: #FFFFFF;
 }
-.content-title {
-    margin-bottom: 20px;
+.content-text {
+    width: 100%;
+    padding: 50px 100px;
+}
+.col-info {
+    padding-right: 0;
+    padding-left: 0;
+}
+.col-info > img {
+    max-height: 41vh;
+}
+.col-text-description {
+    padding: 10px 35px;
+}
+.bg-green {
+    background-color: #8CBEB2;
+}
+.bg-brown {
+    background-color: #5C4B41;
+}
+.bg-cream {
+    background-color: #F2EBBF;
+}
+.card-header > h4 {
+    margin: 0;
+    padding: 15px;
 }
 p.card-text {
     margin-bottom : 5px;
 }
 .price {
-    color: #2268BD;
+    color: #5C4B51;
 }
-#gallery ul {
-    list-style-type: none;
-}
-#gallery ul li {
-    display: inline-block;
-    padding: 5px;
-}
-#gallery ul li img {
-    width: 350px;
-    height: 270px;
-}
-#gallery ul li img:hover {
-    opacity:0.8;
-}
-.card-directions {
-    margin: 0 10px;
-}
-.overlay {
-    position: absolute;
+.gallery {
     width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: rgb(70, 59, 40);
-    opacity: .7;
+}
+.column {
+    padding: 12px 0;
+    float: left;
+    width: 25%;
+}
+.gallery-image:hover {
+    opacity: 0.8;
+}
+#direction {
+    padding-bottom: 25px;
+}
+.map {
+    margin-top: 25px;
+    width: 100%;
 }
 .footer {
-    height: 60px;
-    width: 98.66666666666666%;
+    background-color: #1A1C20;
+    color: #FFFFFF;
+    height: 60px
+}
+.footer > p {
+    text-align: center;
+    padding-top: 15px;
 }
